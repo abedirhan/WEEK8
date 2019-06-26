@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{896BD56B-EA86-4E82-B607-B1B9CAFB1E57}</ProjectGuid>
+    <ProjectGuid>{DDC3DCA4-F2AD-407C-954F-D356B776FF6A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WEEK8</RootNamespace>
-    <AssemblyName>WEEK8</AssemblyName>
+    <RootNamespace>Week8new</RootNamespace>
+    <AssemblyName>Week8new</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Lb08Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Lb08Form.Designer.cs">
+      <DependentUpon>Lb08Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Lb08Form.resx">
+      <DependentUpon>Lb08Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

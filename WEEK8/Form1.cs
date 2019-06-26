@@ -16,5 +16,22 @@ namespace WEEK8
         {
             InitializeComponent();
         }
+
+        private void btnSum_Click(object sender, EventArgs e)
+        {
+           Calculator();
+          // btnSum.Text=(lblResult.Text == "4")? "Multiply":"Salak";
+        }
+
+        private void Calculator()
+        {
+//            Random neRandom=new Random();
+//            txtNumSecond.Text= neRandom.Next(1, 49).ToString();
+            var num1 = Convert.ToInt16(txtNumFirst.Text);
+            var num2 = Convert.ToInt16(txtNumSecond.Text);
+            var result = num1+num2;
+            lblResult.Text = result.ToString();
+            
+        }
     }
 }
