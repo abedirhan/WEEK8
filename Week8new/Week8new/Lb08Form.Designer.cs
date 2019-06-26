@@ -35,6 +35,7 @@
             this.AgeTextbox = new System.Windows.Forms.TextBox();
             this.AgeLabel = new System.Windows.Forms.Label();
             this.BtnSubmit = new System.Windows.Forms.Button();
+            this.OutPutlabel = new System.Windows.Forms.Label();
             this.InfoGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +80,7 @@
             this.NameTextbox.Name = "NameTextbox";
             this.NameTextbox.Size = new System.Drawing.Size(381, 38);
             this.NameTextbox.TabIndex = 1;
+            this.NameTextbox.TextChanged += new System.EventHandler(this.NameTextbox_TextChanged);
             // 
             // AgeTextbox
             // 
@@ -86,7 +88,7 @@
             this.AgeTextbox.Location = new System.Drawing.Point(193, 81);
             this.AgeTextbox.Name = "AgeTextbox";
             this.AgeTextbox.Size = new System.Drawing.Size(381, 38);
-            this.AgeTextbox.TabIndex = 3;
+            this.AgeTextbox.TabIndex = 2;
             this.AgeTextbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // AgeLabel
@@ -106,9 +108,19 @@
             this.BtnSubmit.Location = new System.Drawing.Point(485, 390);
             this.BtnSubmit.Name = "BtnSubmit";
             this.BtnSubmit.Size = new System.Drawing.Size(121, 39);
-            this.BtnSubmit.TabIndex = 2;
+            this.BtnSubmit.TabIndex = 3;
             this.BtnSubmit.Text = "Submit";
             this.BtnSubmit.UseVisualStyleBackColor = false;
+            this.BtnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
+            // 
+            // OutPutlabel
+            // 
+            this.OutPutlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OutPutlabel.Location = new System.Drawing.Point(22, 390);
+            this.OutPutlabel.Name = "OutPutlabel";
+            this.OutPutlabel.Size = new System.Drawing.Size(427, 31);
+            this.OutPutlabel.TabIndex = 3;
+            this.OutPutlabel.Text = "Out Put Label";
             // 
             // Lab08
             // 
@@ -116,12 +128,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.OutPutlabel);
             this.Controls.Add(this.BtnSubmit);
             this.Controls.Add(this.InfoGroupBox);
             this.Controls.Add(this.TitleLabel);
             this.Name = "Lab08";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lab08";
+            this.Load += new System.EventHandler(this.Lab08_Load);
             this.InfoGroupBox.ResumeLayout(false);
             this.InfoGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -138,6 +152,7 @@
         private System.Windows.Forms.TextBox NameTextbox;
         private System.Windows.Forms.Label Namelabel;
         private System.Windows.Forms.Button BtnSubmit;
+        private System.Windows.Forms.Label OutPutlabel;
     }
 }
 
