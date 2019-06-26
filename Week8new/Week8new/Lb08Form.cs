@@ -29,9 +29,9 @@ namespace Week8new
             catch (Exception exception)
             {
                 BtnSubmit.Enabled = false;
-             
+
             }
-            
+
         }
 
         private void NameTextbox_TextChanged(object sender, EventArgs e)
@@ -46,18 +46,30 @@ namespace Week8new
         private void BtnSubmit_Click(object sender, EventArgs e)
         {
             UserName = NameTextbox.Text;
-           // UserAge = Convert.ToSingle(AgeTextbox.Text);
+            // UserAge = Convert.ToSingle(AgeTextbox.Text);
             UserAge = float.Parse(AgeTextbox.Text);
-            NameTextbox.Clear();
-            AgeTextbox.Clear();
+           
             OutPutlabel.Text = NameTextbox.Text + " " + AgeTextbox.Text;
 
 
         }
 
+        private void Clear()
+        {
+            NameTextbox.Clear();
+            AgeTextbox.Clear();
+            BtnSubmit.Enabled = false;
+        }
+
         private void Lab08_Load(object sender, EventArgs e)
         {
             BtnSubmit.Enabled = false;
+            Clear();
+        }
+
+        private void InfoGroupBox_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

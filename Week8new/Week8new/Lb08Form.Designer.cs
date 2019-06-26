@@ -62,6 +62,7 @@
             this.InfoGroupBox.TabIndex = 1;
             this.InfoGroupBox.TabStop = false;
             this.InfoGroupBox.Text = "groupBox1";
+            this.InfoGroupBox.Enter += new System.EventHandler(this.InfoGroupBox_Enter);
             // 
             // Namelabel
             // 
