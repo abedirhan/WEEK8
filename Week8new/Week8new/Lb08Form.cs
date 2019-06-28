@@ -38,11 +38,7 @@ namespace Week8new
         {
             BtnSubmit.Enabled = (NameTextbox.Text.Length >= 2) ? true : false;
         }
-        /// <summary>
-        /// Event Handler for submit button click event
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        
         private void BtnSubmit_Click(object sender, EventArgs e)
         {
             UserName = NameTextbox.Text;
